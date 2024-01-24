@@ -1,0 +1,31 @@
+:root {
+    --var-background: #fff;
+    --var-primary: #212121;
+    --var-color-primary: rgba(255, 255, 255, 0.87);
+}
+
+body {
+    background-color: var(--var-background) !important;
+    .navigation {
+        background-color: var(--var-primary);
+        color: var(--var-color-primary);
+        border-bottom: var(--var-primary) !important;
+    }
+    .card {
+        border-color: var(--var-primary) !important;
+        background-color: var(--var-primary);
+        .card-header {
+            border-color: var(--var-primary) !important;
+            color: var(--var-color-primary);
+        }
+        .card-body {
+            color: var(--var-color-primary);
+        }
+    }
+    h1, h2, h3, h4, h5, p {
+        color: var(--var-color-primary);
+    }
+    nav > a, nav > a:hover {
+        color: var(--var-color-primary);
+    }
+}
